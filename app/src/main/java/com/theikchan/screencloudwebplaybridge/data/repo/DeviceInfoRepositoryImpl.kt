@@ -1,5 +1,6 @@
 package com.theikchan.screencloudwebplaybridge.data.repo
 
+import android.util.Log
 import com.theikchan.screencloudwebplaybridge.NativeStore
 import com.theikchan.screencloudwebplaybridge.domain.model.DeviceDetailInfo
 import com.theikchan.screencloudwebplaybridge.domain.repo.DeviceInfoRepository
@@ -16,9 +17,9 @@ class DeviceInfoRepositoryImpl @Inject constructor(
 
         val appVersion = androidDeviceInfoRepoImpl.getAppVersion()
         val packageName = androidDeviceInfoRepoImpl.getPackageName()
-        val screenWidth = androidDeviceInfoRepoImpl.getScreenWidth()
-        val screenHeight = androidDeviceInfoRepoImpl.getScreenHeight()
-        val screenDensity = androidDeviceInfoRepoImpl.getScreenDensity()
+        val screenWidth = androidDeviceInfoRepoImpl.getScreenWidth().toInt()
+        val screenHeight = androidDeviceInfoRepoImpl.getScreenHeight().toInt()
+        val screenDensity = androidDeviceInfoRepoImpl.getScreenDensity().toInt()
         val androidVersion = androidDeviceInfoRepoImpl.getAndroidVersion()
         val deviceManufacturer = androidDeviceInfoRepoImpl.getManufacturer()
         val deviceModel = androidDeviceInfoRepoImpl.getModel()

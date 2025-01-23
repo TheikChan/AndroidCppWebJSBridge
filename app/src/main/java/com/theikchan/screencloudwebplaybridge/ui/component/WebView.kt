@@ -46,7 +46,6 @@ fun WebView(
             }
         }, update = {
             it.loadUrl(url)
-            onWebViewCreated(it)
         })
 }
 

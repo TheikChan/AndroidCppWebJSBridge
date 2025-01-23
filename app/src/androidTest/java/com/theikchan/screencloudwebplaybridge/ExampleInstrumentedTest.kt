@@ -9,6 +9,7 @@ import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.theikchan.screencloudwebplaybridge.domain.repo.DeviceInfoRepository
 import com.theikchan.screencloudwebplaybridge.domain.usecase.GetDeviceInfoUseCase
 import com.theikchan.screencloudwebplaybridge.navigation.DeviceDetailInfoPara
+import com.theikchan.screencloudwebplaybridge.repo.FakeDeviceInfoRepository
 import com.theikchan.screencloudwebplaybridge.ui.deviceinfodialog.DeviceInfoDialog
 import com.theikchan.screencloudwebplaybridge.ui.deviceinfodialog.DeviceInfoDialogViewModel
 import com.theikchan.screencloudwebplaybridge.ui.main.ScreenCloudWebPlay
@@ -40,7 +41,7 @@ class ExampleInstrumentedTest {
     val composeTestRule = createComposeRule()
 
     @Inject
-    lateinit var mockDeviceInfoRepository: DeviceInfoRepository
+    lateinit var mockDeviceInfoRepository: FakeDeviceInfoRepository
 
     @Before
     fun setup() {

@@ -1,1 +1,1 @@
-### Jetpack Compose, Hilt, C++, WebView JavaScript Bridge, UI Testing ###
+### Jetpack Compose, Hilt, C++, JNI, WebView JavaScript Bridge, UI Testing ###
